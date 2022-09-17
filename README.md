@@ -6,6 +6,7 @@ These are the required commands to run the application
 -   php artisan key:generate
 -   php artisan migrate
 -   php artisan db:seed
+-   php artisan serve
 
 ## API documentation
 
