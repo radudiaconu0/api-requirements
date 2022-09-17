@@ -15,22 +15,23 @@ These are the required commands to run the application
 GET /api/products?category=vehicle&between=price,50000,10000
 ```
 
-| Parameter                | Type             | Description                                                                |
-| :----------------------- | :--------------- | :------------------------------------------------------------------------- |
-| category                 | `string`         | **Optional**. Returns the vechile with the category                        |
-| greater=price,?,?        | `number`         | **Optional**. Returns the product with the price greater than `p`          |
-| greater_or_equal=price,? | `number`         | **Optional**. Returns the product with the price greater or equal than `p` |
-| less=price,p             | `number`         | **Optional**. Returns the product with the price less than `p`             |
-| less_or_equal=price,p    | `number`         | **Optional**. Returns the product with the price less or equal than `p`    |
-| between=price,p1,p2      | `number, number` | **Optional**. Returns the product with the price in the range [p1, p2]     |
-| not_between=price,p1,p1  | `number, number` | **Optional**. Returns the product with the price not in the range [p1, p2] |
+| Parameter                   | Type             | Description                                                                |
+| :-------------------------- | :--------------- | :------------------------------------------------------------------------- |
+| category                    | `string`         | **Optional**. Returns the vechile with the category                        |
+| greater=price,{p}           | `number`         | **Optional**. Returns the product with the price greater than `p`          |
+| greater_or_equal=price,{p}  | `number`         | **Optional**. Returns the product with the price greater or equal than `p` |
+| less=price,{p}              | `number`         | **Optional**. Returns the product with the price less than `p`             |
+| less_or_equal=price,{p}     | `number`         | **Optional**. Returns the product with the price less or equal than `p`    |
+| between=price,{p1},{p2}     | `number, number` | **Optional**. Returns the product with the price in the range [p1, p2]     |
+| not_between=price,{p1},{p1} | `number, number` | **Optional**. Returns the product with the price not in the range [p1, p2] |
 
 ## Responses
 
-This Api will return
+This Api will return the following format:
+
 ```javascript
 {
-  "products"    : array 
+  "products"    : array<Product>
 }
 ```
 
