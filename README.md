@@ -28,7 +28,7 @@ GET /api/products?category=vehicle&between=price,50000,10000
 
 ## Responses
 
-This Api will return the following format:
+This endpoint will return the following format:
 
 ```javascript
 {
@@ -54,7 +54,7 @@ POST /api/products?name=iPhone&category=vehicles&price=10000
 
 ## Responses
 
-Many API endpoints return the JSON representation of the resources created or edited. However, if an invalid request is submitted, or some other error occurs, Gophish returns a JSON response in the following format:
+This endpoint will return the following format:
 
 ```javascript
 {
