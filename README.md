@@ -8,6 +8,7 @@ These are the required commands to run the application
 -   php artisan db:seed
 -   php artisan serve
 
+The RDBMS used is MySQL
 ## API documentation
 
 ---
@@ -38,7 +39,6 @@ This endpoint will return the following format:
 
 The `products` attribute contains an array of filtered products
 
-## API documentation
 
 ---
 
@@ -49,8 +49,8 @@ POST /api/products?name=iPhone&category=vehicles&price=10000
 | Parameter  | Type     | Description                               |
 | :--------- | :------- | :---------------------------------------- |
 | `name`     | `name`   | **Required**. The name of the product     |
-| `category` | `string` | **Optional**. The category of the product |
-| `price`    | `number` | **Optional**. The price of the product    |
+| `category` | `string` | **Required**. The category of the product |
+| `price`    | `number` | **Required**. The price of the product    |
 
 ## Responses
 
